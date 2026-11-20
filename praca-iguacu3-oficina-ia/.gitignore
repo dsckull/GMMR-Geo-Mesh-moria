@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.replit.local
+.DS_Store
+__pycache__/
+*.pyc
+*.log
+data/*.json
+data/*.jsonl
+data/private/
+data/thumbs/

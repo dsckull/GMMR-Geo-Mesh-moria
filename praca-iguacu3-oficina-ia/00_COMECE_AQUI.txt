@@ -1,0 +1,40 @@
+PRAÇA IGUAÇU 3 — OFICINA HUMANO-IA
+PACOTE CPU-FIRST v0.1.0 · 19/11/2026
+
+LEIA ISTO PRIMEIRO
+
+Este ZIP contém um protótipo web funcional em código-fonte e a arquitetura técnica completa. NÃO é ainda a reconstrução final da praça nem um projeto 3D medido.
+
+ARQUIVOS PRINCIPAIS
+- README.md: instalação, recursos implementados e limites
+- docs/ARQUITETURA_MESTRE.md: estudo arquitetural integral
+- docs/CONTRATO_PICOGK.md: comunicação com o futuro worker PicoGK
+- docs/PROMPT_LOVABLE.md: instruções específicas para Lovable
+- PROMPT_AGENTE_REPLIT.txt: mensagem pronta para o agente do Replit
+- src/: interface web React + Three.js
+- server/: servidor, cena transacional, OpenRouter e correlação
+- scripts/: ORB/RANSAC por CPU, requer Python/OpenCV opcional
+- tests/: validação do contrato de cena, travas, unidades e IA
+
+COMEÇAR NO REPLIT
+1. Importe ou envie os arquivos do ZIP para um projeto Node.js.
+2. Cadastre os Secrets EDITOR_TOKEN e SESSION_SECRET; a chave OPENROUTER_API_KEY é opcional.
+3. Rode npm install, npm test, npm run build e npm start.
+4. Entre usando EDITOR_TOKEN; adicione um banco de demonstração ou fotos próprias.
+5. Para correlação ORB por CPU: instale requirements-cpu.txt e defina ORB_ENABLED=1.
+
+GITHUB
+A conexão consultada nesta conversa não disponibilizou repositórios nem instalações autorizadas. Por isso nenhum arquivo foi efetivamente enviado ao GitHub. Extraia o ZIP no repositório autorizado ou habilite a instalação com acesso de escrita e solicite a publicação.
+
+LIMITES IMPORTANTES
+- Sem GPU local obrigatória.
+- OpenRouter faz inferência por API remota e pode gerar custos.
+- Similaridade visual e ORB não fornecem coordenadas geográficas nem medidas reais.
+- PicoGK é integrado pelo contrato de trabalhos; worker ativo e exportação GLB reais ainda são marcos futuros.
+- Replit é o alvo inicial porque oferece Node e opção de Python. Lovable pode servir como frontend, após adaptação de autenticação/proxy.
+
+VALIDAÇÃO NESTA ENTREGA
+- 5 testes automatizados do núcleo e da estrutura PicoGK passaram.
+- Script de ORB/RANSAC validado com imagens sintéticas deslocadas.
+- Sintaxe do servidor Node e arquivos JSX inspecionada.
+- npm install/build não puderam ser concluídos neste ambiente por indisponibilidade/timeout de instalação, então NÃO afirmamos que o deploy foi testado.

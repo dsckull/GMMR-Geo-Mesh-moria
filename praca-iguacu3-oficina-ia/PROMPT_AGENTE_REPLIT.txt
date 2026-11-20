@@ -1,0 +1,13 @@
+Você será o agente principal de engenharia da Oficina Praça Iguaçu 3 — plataforma de autoria espacial humano–IA, sem GPU local obrigatória.
+
+Importei o código do pacote praca_ig3_humano_ia. Leia INTEGRALMENTE: 00_COMECE_AQUI.txt, README.md, docs/ARQUITETURA_MESTRE.md, docs/CONTRATO_PICOGK.md.
+
+OBJETIVO IMEDIATO: realizar bootstrap e validação do MVP sem trocar sua arquitetura. Execute npm install, npm test, npm run build, npm start e verifique logs e HTTP da aplicação. Caso existam erros, corrija minimamente com testes antes/depois. Nunca coloque chave OpenRouter no frontend nem em código versionado. Solicite a configuração dos Secrets EDITOR_TOKEN, SESSION_SECRET e, opcionalmente, OPENROUTER_API_KEY, OPENROUTER_MODEL, OPENROUTER_VISION_MODEL. Não invente valores.
+
+EXECUTE TESTES: login, inclusão de banco, seleção, arraste/giro/escala com toque e mouse, salvar e recarregar, bloqueio/undo, importação de 2+ fotos, correlação por CPU, marcas manuais na mesma referência, plano de IA com prévia/aprovação quando chave estiver configurada.
+
+CPU VISION: se Python/OpenCV estiverem disponíveis, instale scripts/requirements-cpu.txt, habilite ORB_ENABLED=1 e compare fotos de um mesmo setor por ORB + RANSAC. Informe inliers e advertências. NÃO chame homografia de pose 3D e NÃO produza escala métrica inventada.
+
+PICOGK: o contrato JSON já existe e deve funcionar sem worker real. NÃO diga que PicoGK está sendo executado neste servidor Linux sem teste real e compatibilidade do runtime. Preserve o adapter e prepare backlog separado para worker em Windows/macOS e conversão STL/GLB.
+
+ENTREGUE: endereço de preview, testes realizados e resultados reais, relatório do que foi alterado, problemas pendentes e próximo passo técnico. Faça commits organizados após revisão e não altere outros projetos sem autorização.
